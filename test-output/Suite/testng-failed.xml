@@ -7,13 +7,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.GoogleLoginTest">
+      <class name="testCases.FacebookLoginTest">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="GoogleLogintest"/>
+          <include name="facebookLogintest"/>
         </methods>
-      </class> <!-- testCases.GoogleLoginTest -->
+      </class> <!-- testCases.FacebookLoginTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
