@@ -11,7 +11,7 @@ public class LoginTest extends BaseClass {
 	void testlogin()
 	{
 	try {
-		logger.info("Login test started");
+		logger.info("Facebook Login test started");
 	LoginPage lp = new LoginPage(driver);
 	lp.setEmail(rb.getString("email"));
 	lp.setpwd(rb.getString("pwd"));

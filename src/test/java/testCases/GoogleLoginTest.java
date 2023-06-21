@@ -12,10 +12,10 @@ public class GoogleLoginTest extends BaseClass{
 	void GoogleLogintest() throws Throwable
 	{
 	try {
-		sleep(3000);
+		sleep(3000,driver);
 		logger.info("Login test started");
 		GoogleLoginPage gp = new GoogleLoginPage(driver);
-		sleep(3000);
+		sleep(3000,driver);
 		gp.GmailLogin1();
 	//sleep(3000);
 		switchNew(driver);

@@ -12,27 +12,35 @@ public class FacebookLoginTest extends BaseClass {
 	void facebookLogintest() throws Throwable
 	{
 	try {
-		sleep(3000);
-		logger.info("Login test started");
+		sleep(3000,driver);
+		logger.info("Facebook Login test started");
 		FacebookLoginPage fp = new FacebookLoginPage(driver);
-		sleep(3000);
+		sleep(3000,driver);
 		fp.FacebookLogin();
-	//sleep(3000);
+
 		switchNew(driver);
-	logger.info("Clicked");
-	//gp.AnotherAccount();
+	
+	
 	fp.FacebookEmail(rb.getString("FacebookEmail"));
 
 	fp.FacebookPass(rb.getString("FacebookPass"));
 	fp.LoginBtn();
+	logger.info("Successfully logged-in");
+	switchOld(driver);
+	
+	sleep(7000,driver);
+	
+	
+	Assert.assertEquals(driver.getCurrentUrl(),"https://www.centaxonline.com/latest-news-updates/all");
+	sleep(3000,driver);
 	fp.LogoutDropdown();
-	Assert.assertEquals(driver.getCurrentUrl(), "https://www.centaxonline.com/latest-news-updates/all");
 	}catch(Exception e)
 	{
-		logger.error("Test failed");
+		logger.error("Facebook Login failed");
 		Assert.fail();
 		
 	}
+	
 	}
 
 }

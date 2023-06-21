@@ -23,10 +23,10 @@ public class FacebookLoginPage extends BasePage {
 	@FindBy(xpath ="//input[@name='login']")
 	WebElement LoginBtn;
 	
-	@FindBy(xpath="//i[@class='x1b0d499 xi3auck']")
+	@FindBy(xpath="//ul[@class='help-menu']//li[3]//a[@class='btn-ic']")
 	WebElement LogoutDropdown;
 	
-			@FindBy(xpath="(//div[@class='x1oo3vh0 x1rdy4ex']//div//div//div)[1]")
+			@FindBy(xpath="//a[normalize-space()='Logout']")
 			WebElement LogoutBtn;
 	
 	

@@ -25,7 +25,7 @@ public class GenericFunctions {
 		return (st + "@" + num);
 	}
 
-	public void sleep(int nenoSecond) throws Throwable {
+	public void sleep(int nenoSecond,WebDriver driver) throws Throwable {
 
 		Thread.sleep(nenoSecond);
 	}
@@ -57,12 +57,38 @@ public class GenericFunctions {
 			 * try { verifyEquals(currenturl, "Untitled Document", driver);
 			 * System.out.println("-- Print page verified successfully"); } catch
 			 * (IOException e) { // TODO Auto-generated catch block e.printStackTrace(); }
-			 * 
-			 * driver.switchTo().window(child); driver.close();
-			 * driver.switchTo().window(homepage);
+			 */
+			//  driver.switchTo().window(child); driver.close();
+			/* driver.switchTo().window(homepage);
 			 */
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-}
+	public void switchOld(WebDriver driver) {
+
+		// String mainpage = driver.getWindowHandle();
+		try {
+			ArrayList<String> newTb = new ArrayList<String>(driver.getWindowHandles());
+
+			System.out.println("array list count" + newTb.size());
+				System.out.println(newTb);
+				String last = newTb.get(0);
+
+			//	String last = newTb.get(1);
+				
+				  driver.switchTo().window(last);
+			// driver.switchTo().window(mainpage);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}}
+			//ArrayList<String> newTb = new ArrayList<String>(driver.getWindowHandles());
+
+		//	System.out.println("array list count" + newTb.size());
+		//	System.out.println(newTb);
+		//	String last = newTb.get(0);
+
+		//	String last = newTb.get(1);
+			
+			//  driver.switchTo().window(last);

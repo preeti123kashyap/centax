@@ -58,26 +58,8 @@ public void setup(String br)
 @AfterClass
 public void teardown()
 {
-//driver.quit();	
-}
-public String randomString() {
-	String generatedString = RandomStringUtils.randomAlphabetic(5);
-	return (generatedString);
-}
-
-public String randomNumber() {
-	String generatedString2 = RandomStringUtils.randomNumeric(10);
-	return (generatedString2);
-}
-
-public String randomAlphaNumeric() {
-	String st = RandomStringUtils.randomAlphabetic(4);
-	String num = RandomStringUtils.randomNumeric(3);
 	
-	return (st+"@"+num);
+driver.quit();	
 }
-public void sleep(int nenoSecond) throws Throwable {
 
-	Thread.sleep(nenoSecond);
-}
 }

@@ -12,17 +12,17 @@ public class RegistrationTest extends BaseClass {
 	try {
 		RegistrationPage rp = new RegistrationPage(driver);
 		rp.clickLink();
-		sleep(2000);
+		sleep(2000,driver);
 		rp.setfirstn(randomString());
 		rp.setlastn(randomString());
 		rp.setemail(randomString() + "@gmail.com");
 		rp.password(randomAlphaNumeric());
-		sleep(4000);
+		sleep(4000,driver);
 		scrolldown(300, driver);
 	
 		rp.clicknext();
 		
-		sleep(4000);
+		sleep(4000,driver);
 		
 
 		
@@ -30,7 +30,7 @@ public class RegistrationTest extends BaseClass {
 		  System.out.println(url);
 		  
 		  Assert.assertEquals(url,"https://www.centaxonline.com/auth/mobileVerification"); 
-		  sleep(2000);
+		  sleep(2000,driver);
 		  }catch(Exception e)
 		  { 
 			  Assert.fail();
