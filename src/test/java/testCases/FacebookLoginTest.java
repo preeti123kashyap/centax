@@ -25,13 +25,14 @@ public class FacebookLoginTest extends BaseClass {
 
 	fp.FacebookPass(rb.getString("FacebookPass"));
 	fp.LoginBtn();
-	logger.info("Successfully logged-in");
+	
 	switchOld(driver);
 	
 	sleep(7000,driver);
 	
 	
 	Assert.assertEquals(driver.getCurrentUrl(),"https://www.centaxonline.com/latest-news-updates/all");
+	logger.info("Successfully logged-in");
 	sleep(3000,driver);
 	fp.LogoutDropdown();
 	}catch(Exception e)

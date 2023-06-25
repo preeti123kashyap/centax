@@ -1,0 +1,10 @@
+13:19:32.211 [main] INFO  testCases.FacebookLoginTest - Facebook Login test started
+13:19:32.493 [main] INFO  testCases.FacebookLoginTest - Facebook Login test started
+13:19:36.840 [main] INFO  testCases.FacebookLoginTest - Successfully logged-in
+13:19:37.011 [main] INFO  testCases.FacebookLoginTest - Successfully logged-in
+13:19:57.642 [main] INFO  testCases.FacebookLoginTest - Facebook Login test started
+13:20:01.407 [main] ERROR testCases.FacebookLoginTest - Facebook Login failed
+13:20:16.683 [main] INFO  testCases.FacebookLoginTest - Facebook Login test started
+13:20:21.217 [main] INFO  testCases.FacebookLoginTest - Successfully logged-in
+13:22:35.548 [main] INFO  testCases.FacebookLoginTest - Facebook Login test started
+13:22:47.072 [main] INFO  testCases.FacebookLoginTest - Successfully logged-in
