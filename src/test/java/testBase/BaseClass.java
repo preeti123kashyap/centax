@@ -23,7 +23,7 @@ public class BaseClass extends GenericFunctions{
 	public  Logger logger;
 	public ResourceBundle rb;
 @BeforeClass
-@Parameters("browser")
+@Parameters({"browser"})
 public void setup(String br)
 {
 	
