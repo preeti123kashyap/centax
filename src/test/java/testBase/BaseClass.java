@@ -23,7 +23,7 @@ public class BaseClass extends GenericFunctions{
 	public  Logger logger;
 	public ResourceBundle rb;
 @BeforeClass
-@Parameters({"browser"})
+@Parameters("browser")
 public void setup(String br)
 {
 	
@@ -33,6 +33,7 @@ public void setup(String br)
 	ChromeOptions options = new ChromeOptions();
 	options.addArguments("--incognito","--start-maximized");
 	options.addArguments(Arrays.asList("--incognito","--start-maximized"));
+//	options.addArguments("user-data-dir=C:/Users/user_name/AppData/Local/Google/Chrome/User Data");
 	//options.addArguments("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36");
 	options.addArguments("--remote-allow-origins=*");
 	
