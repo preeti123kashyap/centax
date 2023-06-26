@@ -13,3 +13,5 @@
 10:11:44.266 [main] INFO  testCases.FacebookLoginTest - Facebook Login test started
 10:29:45.113 [main] INFO  testCases.FacebookLoginTest - Facebook Login test started
 10:29:59.883 [main] INFO  testCases.FacebookLoginTest - Successfully logged-in
+12:29:51.626 [main] INFO  testCases.FacebookLoginTest - Facebook Login test started
+12:30:07.628 [main] INFO  testCases.FacebookLoginTest - Successfully logged-in
